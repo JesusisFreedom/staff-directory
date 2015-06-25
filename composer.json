@@ -1,0 +1,11 @@
+{
+    "name": "jesusisfreedom/staff-directory",
+    "type": "wordpress-plugin",
+    "authors": [
+        {
+            "name": "Austin Adams",
+            "email": "austin@farmingtonwebdesign.net"
+        }
+    ],
+    "require": {}
+}
