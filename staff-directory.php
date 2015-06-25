@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name: Staff Directory
-Plugin URI: https://wordpress.org/plugins/staff-directory/
+Plugin URI: https://github.com/JesusisFreedom/staff-directory
 Description: Allows Wordpress to keep track of your staff directory for your website. Good for churches, small companies, etc.
-Version: 1.0.1
-Author: Adam Tootle
-Author URI: http://www.adamtootle.com
+Version: 1.0.2
+Author: Austin Adams ~ Adam Tootle
+Author URI: http://www.farmingtonwebdesign.net
 */
 
 global $wpdb;

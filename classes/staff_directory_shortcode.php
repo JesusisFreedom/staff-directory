@@ -269,9 +269,7 @@ EOT;
 
         while ($wp_query->have_posts()) {
             $wp_query->the_post();
-
             $staff_name = get_the_title();
-            $slug = get_queried_object()->post_name;
             if (has_post_thumbnail()) {
                 $attachment_array = wp_get_attachment_image_src(get_post_thumbnail_id());
                 $photo_url = $attachment_array[0];
@@ -295,8 +293,8 @@ EOT;
                 $staff_category = "";
             }
 
-            $accepted_single_tags = array("[name]", "[photo_url]", "[bio]", "[category]", "[id]", "[slug]");
-            $replace_single_values = array($staff_name, $photo_url, $staff_bio, $staff_category, the_ID(), $slug);
+            $accepted_single_tags = array("[name]", "[photo_url]", "[bio]", "[category]", "[id]", "[link]");
+            $replace_single_values = array($staff_name, $photo_url, $staff_bio, $staff_category, get_the_ID(), get_permalink());
 
             $accepted_formatted_tags = array("[name_header]", "[photo]", "[email_link]", "[bio_paragraph]", "[website_link]");
             $replace_formatted_values = array("<h3>$staff_name</h3>", $photo_tag, $staff_email_link, "<p>$staff_bio</p>", $staff_website_link);
